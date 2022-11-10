@@ -13,3 +13,5 @@ Imports:
     fs,
     glue,
     rlang
+URL: https://github.com/EmilHvitfeldt/hexfetch
+BugReports: https://github.com/EmilHvitfeldt/hexfetch/issues
