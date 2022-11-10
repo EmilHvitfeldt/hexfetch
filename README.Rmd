@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hexfetch
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of hexfetch is to extract hex logos from packages.
+
+## Installation
+
+You can install the development version of hexfetch from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EmilHvitfeldt/hexfetch")
+```
+
+## Example
+
+```{r example}
+library(hexfetch)
+
+my_dir <- tempdir()
+hexfetch(tidyverse::tidyverse_packages(), my_dir)
+fs::dir_info(my_dir)
+```
